@@ -97,10 +97,12 @@
             ></a>
           </li>
         </ul>
-        <button class="btn btn--primary">
-          <span>Ver Projetos</span>
-          <i class="bi bi-arrow-down-right"></i>
-        </button>
+        <a href="#projetos">
+          <button class="btn btn--primary">
+            <span>Ver Projetos</span>
+            <i class="bi bi-arrow-down-right"></i>
+          </button>
+        </a>
       </div>
       <div class="main__content2">
         <iframe
@@ -113,38 +115,368 @@
       </div>
     </main>
 
-    <section class="skills">
+    <section class="technologies">
       <h2>Conhecimento nas principais tecnologias do mercado</h2>
-      <ul class="skills__list">
-        <li class="skills_item">
+      <ul class="technologies__list">
+        <li class="technologies_item">
           <img
-            class="skills__logo"
+            class="technologies__logo"
             src="assets/images/technologies/Angular.svg"
             alt="Logo Angular"
           />
         </li>
-        <li class="skills_item">
+        <li class="technologies_item">
           <img
-            class="skills__logo"
+            class="technologies__logo"
             src="assets/images/technologies/TypeScript.svg"
             alt="Logo TypeScript"
           />
         </li>
-        <li class="skills_item">
+        <li class="technologies_item">
           <img
-            class="skills__logo"
+            class="technologies__logo"
             src="assets/images/technologies/Bootstrap.svg"
             alt="Logo Bootstrap"
           />
         </li>
-        <li class="skills_item">
+        <li class="technologies_item">
           <img
-            class="skills__logo"
+            class="technologies__logo"
             src="assets/images/technologies/SASS.svg"
             alt="Logo SASS"
           />
         </li>
       </ul>
+    </section>
+
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+      <div class="projects__container">
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/projects/aesImage.png"
+            alt="Screen Renan`s Box"
+          />
+          <div class="card__body">
+            <h3 class="card__title">Website AES</h3>
+            <p class="card__description">Site contendo empresas associadas</p>
+            <ul class="card__list">
+              <li class="card__item">Listagem empresas associadas</li>
+              <li class="card__item">Cadastro de empresas e informações</li>
+              <li class="card__item">Login e sistema administrativo</li>
+              <li class="card__item">Filtragem por categorias.</li>
+            </ul>
+
+            <ul class="technologies__list">
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Angular.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/TypeScript.svg"
+                  alt="Logo TypeScript"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/SASS.svg"
+                  alt="Logo SASS"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a
+                href="https://associacao-empresarial-sertanense-2bqt.vercel.app/"
+                target="_blank"
+              >
+                <button class="btn btn--primary">
+                  <span>Prévia</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a
+                href="https://github.com/Renan1102/Associacao_Empresarial_Sertanense"
+                target="_blank"
+              >
+                <button class="btn">
+                  <span>Respositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__card card--reverse">
+          <img
+            class="card__cover"
+            src="assets/images/projects/gerenFunc.png"
+            alt="Screen Renan`s Box"
+          />
+          <div class="card__body">
+            <h3 class="card__title">Gerenciador de Funcionários</h3>
+            <p class="card__description">
+              Sistema de gerenciamento de funcionários de uma empresa
+            </p>
+            <ul class="card__list">
+              <li class="card__item">
+                Cadastro de informações do contato e do funcionário
+              </li>
+              <li class="card__item">
+                Atualizar informações, promove-lo ou demiti-lo
+              </li>
+              <li class="card__item">Histórico do funcionário</li>
+              <li class="card__item">Manipulação de PDF</li>
+            </ul>
+
+            <ul class="technologies__list">
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Angular.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/TypeScript.svg"
+                  alt="Logo TypeScript"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/SASS.svg"
+                  alt="Logo SASS"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://taugor-alpha.vercel.app/" target="_blank">
+                <button class="btn btn--primary">
+                  <span>Prévia</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a
+                href="https://github.com/Renan1102/gerenciador-funcionarios"
+                target="_blank"
+              >
+                <button class="btn">
+                  <span>Respositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <img
+            class="card__cover"
+            src="assets/images/projects/ralphGame.png"
+            alt="Screen Renan`s Box"
+          />
+          <div class="card__body">
+            <h3 class="card__title">Detona Ralph Game</h3>
+            <p class="card__description">
+              Jogo divertido baseado no filme "Detona Ralph"
+            </p>
+            <ul class="card__list">
+              <li class="card__item">Sistema de Pontuação</li>
+              <li class="card__item">
+                Sprites e imagens customizadas para criar a estética do filme
+              </li>
+              <li class="card__item">Interatividade com usuário</li>
+            </ul>
+
+            <ul class="technologies__list">
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Angular.svg"
+                  alt="Logo Angular"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/TypeScript.svg"
+                  alt="Logo TypeScript"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/Bootstrap.svg"
+                  alt="Logo Bootstrap"
+                />
+              </li>
+              <li class="technologies_item">
+                <img
+                  class="technologies__logo"
+                  src="assets/images/technologies/SASS.svg"
+                  alt="Logo SASS"
+                />
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a
+                href="https://renan1102.github.io/Detona-Ralph-game/"
+                target="_blank"
+              >
+                <button class="btn btn--primary">
+                  <span>Prévia</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a
+                href="https://github.com/Renan1102/Detona-Ralph-game"
+                target="_blank"
+              >
+                <button class="btn">
+                  <span>Respositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Renan1102">
+          <button class="btn btn--primary">
+            <span>Ver Todos os Projetos</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="about__content1">
+        <img class="about__photo" src="assets/images/eu.png" alt="">
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>Renan de Souza. Meu primeiro contato com programação foi durante o ensino médio em que cursei Técnico em TI e me aventurei com html e lógica. Sou formado em Análise e Desenvolvimento de Sistemas e atualmente trabalho como dev júnior I.
+          </p>  
+          <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Inglês: Intermediário | Português: Nativo</span>
+          </div>
+          <div class="description__buttons">
+            <a href="https://www.linkedin.com/in/renan-de-souza-795b22195/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Conecte-se Comigo</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button> 
+            </a>
+            <a href="">
+              <button class="btn">
+                <span>Currículo</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about__content2">
+        <div class="col1">
+          <div class="row1">
+            <h3>Formação</h3>
+            <h4>Análise e Desenvolvimento de Sistemas</h4>
+            <span>Mar 2021 - Jun 2024</span>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul – Campus Sertão</span>
+            </div>
+            <h4>Técnico em Manutenção e Suporte em Informática</h4>
+            <span>Mar 2017 - Dez 2019</span>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul – Campus Sertão</span>
+            </div>
+            
+          </div>
+          <div class="row2">
+            <h3>Experiências</h3>
+            <h4>Instrutora</h4>
+            <span>Digital Innovation One. Fev 2023 - Atualmente</span>
+            <span>Produção de conteúdos educacionais direcionados a 
+              alunos iniciantes que desejam construir uma base no Desenvolvimento Front-end.
+            </span>
+            <ul class="about__list">
+              <li class="about__item">Elaboração de ementas;</li>
+              <li class="about__item">Ministração de aulas assíncronas;</li>
+              <li class="about__item">Produção de materiais complementares.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col2">
+          <h3>Cursos</h3>
+          <div id="accordion">
+            <div class="accordion__item active">
+              <button class="accordion__header start">
+                <span>Versionamento de Código com Git e GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>
+                  Digital Innovation One. Fev 2023. 2h.
+                </p>
+                <p>
+                  O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
+                  operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
+                  até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
+                  com o repositório remoto. 
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Contribuindo em um Projeto Open Source no GitHub</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>
+                  Digital Innovation One. Fev 2023. 1h.
+                </p>
+                <p>
+                  Lab prático sobre colaboração em projetos de código aberto.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header end">
+                <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body end">
+                <p>
+                  Digital Innovation One. Fev 2023. 2h.
+                </p>
+                <p>
+                  Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion.
+                </p>
+              </div>
+            </div>
+          </div>
     </section>
 
     <footer>
