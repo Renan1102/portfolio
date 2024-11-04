@@ -399,12 +399,58 @@ main {
   gap: 0.5rem;
 }
 
+#accordion {
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-border-color);
+}
+
 .accordion__header {
+  width: 100%;
   display: flex;
   padding: 0.75rem 1rem;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: transparent;
+}
+
+.accordion__header span {
+  color: var(--title-color);
+  font-size: 1.15rem;
+}
+
+.accordion__header.start {
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+
+.accordion__header.end,
+.accordion__item.active .accordion__body.end {
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+}
+
+.accordion__item.active .accordion__header.end {
+  border-radius: 0;
+}
+
+.accordion__body {
+  display: none;
+  flex-direction: column;
+  padding: 1.25rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.accordion__item.active .accordion__header {
   background: var(--secondary-bg-color);
+}
+
+.accordion__item.active .accordion__body {
+  display: flex;
+}
+
+.accordion__item.active .bi-caret-down-fill {
+  transform: rotate(180deg);
 }
 
 footer {
@@ -508,6 +554,10 @@ footer p {
     font-size: 4rem;
   }
 
+  h3 {
+    font-size: 2.5rem;
+  }
+
   .main {
     padding: 12rem 6rem 2rem;
   }
@@ -570,8 +620,8 @@ footer p {
     font-size: 5rem;
   }
 
-  p {
-    font-size: 1.5rem;
+  h3 {
+    font-size: 3.25rem;
   }
 
   .header {
