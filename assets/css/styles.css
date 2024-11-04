@@ -81,6 +81,18 @@ h2 {
   margin-bottom: 2rem;
 }
 
+h3 {
+  font-size: 1.55rem;
+  text-align: left;
+}
+
+h4 {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
 h1,
 h2,
 h3 {
@@ -90,8 +102,14 @@ h3 {
   font-weight: 200;
 }
 
-p {
+p,
+span,
+li {
   font-size: 1.25rem;
+  text-align: justify;
+}
+
+p {
   text-align: justify;
 }
 
@@ -144,7 +162,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   padding: 0.5rem 1rem;
 }
 
@@ -166,7 +183,7 @@ p {
 }
 
 .menu__text {
-  font-size: 1.75rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 
@@ -252,6 +269,8 @@ main {
 .technologies h2 {
   font-size: 2rem;
   text-transform: none;
+  letter-spacing: normal;
+  text-align: start;
 }
 
 .technologies__list {
@@ -274,6 +293,11 @@ main {
 
 .technologies__logo {
   height: 2.4rem;
+  filter: invert(1);
+}
+
+.technologies__logo.colorido {
+  filter: grayscale(1) brightness(200%);
 }
 
 .projects {
@@ -317,16 +341,33 @@ main {
   color: var(--title-color);
 }
 
-.card__list {
-  margin-left: 1rem;
+.card__list,
+.about__list {
+  margin-left: 1.25rem;
 }
 
-.card__item {
+.card__item,
+.about__item {
   list-style: disc;
 }
 
-.card__buttons {
+.card__buttons,
+.description__buttons {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card__buttons .btn {
+  padding: 0.65rem 1.25rem;
+}
+
+.card__buttons .btn span {
+  font-size: 1rem;
+}
+
+.card__body .technologies__list {
+  gap: 0.75rem;
 }
 
 .card__body .technologies_item {
@@ -453,6 +494,28 @@ main {
   transform: rotate(180deg);
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-top: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact .btn {
+  width: auto;
+}
+
+.contact .email {
+  text-transform: lowercase;
+}
+
 footer {
   margin-bottom: 6rem;
 }
@@ -493,8 +556,16 @@ footer p {
   }
 
   main,
-  .projects {
+  .projects,
+  .about {
     padding: 8rem 6rem 4rem 6rem;
+  }
+
+  .contact {
+    padding: 6rem;
+  }
+  .contact p {
+    width: 80%;
   }
 
   .main__content1 {
@@ -606,7 +677,8 @@ footer p {
     font-size: 1.25rem;
   }
 
-  .card__buttons .btn {
+  .card__buttons .btn,
+  .description__buttons .btn {
     width: auto;
   }
 }
@@ -632,7 +704,9 @@ footer p {
     padding: 12rem 15rem 2rem;
   }
 
-  .technologies {
+  .technologies,
+  .projects,
+  .about {
     padding: 10rem 15rem 4rem;
   }
 }
